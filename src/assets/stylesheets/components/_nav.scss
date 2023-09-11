@@ -1,0 +1,193 @@
+.navbar-light .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+.collapse {
+  justify-content: flex-end;
+}
+#front-nav {
+  .custom-toggler .navbar-toggler-icon {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-toggler.navbar-toggler {
+    color: $gray-700;
+    font-size: 24px;
+  }
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
+  .nav-link {
+    color: $gray-700;
+    padding-left: 20px;
+    padding-right: 20px;
+    &:hover {
+      color: $primary
+    }
+    &.active-link{
+      color: $primary;
+    }
+    &.router-link-exact-active {
+      color: $primary;
+    }
+  }
+  &.shadows {
+    background-color: $white;
+    box-shadow: 0 4px 4px 0px rgba(36, 36, 36, 0.2);
+    .nav-link {
+      color: $gray-700;
+
+      &:hover,
+      &[aria-expanded="true"] {
+        color: $secondary;
+      }
+      &.router-link-exact-active {
+        color: $primary;
+      }
+    }
+  }
+  @include max-991 {
+    background-color: $white;
+    .navbar-nav {
+      margin-top: 15px;
+      background-color: $white;
+    }
+    .nav-item {
+      border-top: 1px dotted $gray-500;
+    }
+    .nav-link {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $gray-700;
+      &:hover,
+      &[aria-expanded="true"] {
+        color: $secondary;
+      }
+      &.router-link-exact-active {
+        color: $primary;
+      }
+    }
+    .icon-link {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .icon-link-alone {
+      padding-right: 20px;
+      .wrap {
+        display: inline-block;
+        margin-top: 5px;
+      }
+    }
+    .icon-link-wrap {
+      margin-left: auto;
+      margin-right: 5px;
+    }
+  }
+  @include max-767 {
+    background-color: $white;
+    .icon-link {
+      padding-right: 8px;
+    }
+  }
+}
+// 後台選單 ------------------------------------------------------------------------------------------
+#admin-nav{
+  background-color: $primaryDark;
+  color: $white;
+  .custom-toggler .navbar-toggler-icon {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-toggler.navbar-toggler {
+    color: $primaryDark;
+    font-size: 24px;
+  }
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
+  .nav-link {
+    color: $primaryDark;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:hover {
+      color: $primaryLight
+    }
+
+    &.router-link-exact-active {
+      color: $secondary;
+    }
+  }
+  &.shadows {
+    background-color: $primaryDark;
+    color: $dark;
+    .nav-link {
+      color: $dark;
+
+      &:hover,
+      &[aria-expanded="true"] {
+        color: $primaryLight;
+      }
+      &.router-link-exact-active {
+        color: $primary;
+      }
+    }
+  }
+  @include max-991 {
+    .navbar-nav {
+      margin-top: 15px;
+      background-color: $primaryDark;
+    }
+    .nav-item {
+      border-top: 1px dotted $gray-500;
+      color: $white;
+    }
+    .nav-link {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $gray-700;
+      &:hover,
+      &[aria-expanded="true"] {
+        color: $primaryLight;
+      }
+      &.router-link-exact-active {
+        color: $primary;
+      }
+    }
+    .icon-link {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .icon-link-alone {
+      padding-right: 20px;
+      .wrap {
+        display: inline-block;
+        margin-top: 5px;
+      }
+    }
+    .icon-link-wrap {
+      margin-left: auto;
+      margin-right: 5px;
+    }
+  }
+  @include max-767 {
+    .icon-link {
+      padding-right: 8px;
+    }
+  }
+}
+

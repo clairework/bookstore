@@ -1,0 +1,55 @@
+    .section_process {
+      .step-wrap {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      .icon {
+        font-size: 1.4rem;
+      }
+      .txt {
+        border-top: 1px solid;
+      }
+      .step {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9ecef;
+        color: $gray-500;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        transition: all 0.5s 0.4s;
+        &.done {
+          background-color: $primary;
+          color: $dark;
+        }
+      }
+      .progress {
+        height: 2px;
+        margin-top: -40px;
+        margin-left: 44px;
+        margin-right: 44px;
+      }
+      .progress-bar {
+        width: 0%;
+        &.step2 {
+          width: 50%;
+        }
+        &.step3 {
+          width: 100%;
+        }
+      }
+    }
+
+      .img-wrap {
+        padding-left: 5px;
+        img {
+          width: 120px;
+          height: auto;
+        }
+      }
+  
+      

@@ -1,0 +1,150 @@
+.bookicon {
+  width:60px;
+} 
+ .product-img{
+  width: 360px;
+ }
+  
+  .category-swiper {
+
+    .prodHover{
+      &:hover{
+        &::after{
+          transition: all 3s ease-out;
+          content:"";
+          position: absolute;
+          width: 100%;
+          height:100%;
+          top: 0%;
+        }
+      }
+    }
+  }
+ 
+//分類按鈕區域
+.section-category {
+  background-position: left bottom;
+  font-size:40px;
+  a:hover {
+    color: $white;
+  }
+  .card-small {
+    height: 130px;
+    width: 180px;
+    background-color: $primaryLight;
+    box-shadow: 0 .5rem 1rem rgba($black, .15);
+  }
+  .card-small:hover{
+      background-color: $primary;
+      cursor: pointer;
+      box-shadow: 0 .125rem .25rem rgba($black, .45);
+  }
+
+  .cate-img {
+    height: 90px;
+    object-fit: cover;
+    width: 90px;
+  }
+   
+ }
+
+
+//  Extra small（xs）: 小於 576px
+// Small（sm）: 大於等於 576px
+// Medium（md）: 大於等於 768px
+// Large（lg）: 大於等於 992px
+// Extra large（xl）: 大於等於 1200px
+
+ .category-title {
+  font-size:40px;
+  img {
+    height:300px;
+    object-fit:cover;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 38px; 
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 24px; 
+    img {
+      height:200px;
+      object-fit:cover;  
+    }
+
+  }
+
+}
+
+$background-color: white;
+    .bg-cover1{
+      background-position: center center;
+      background-size: cover;
+      background-image: url(@/assets/images/homebanner.png);
+      height: 460px;
+      @include max-767 {
+        height: 300px;
+      } 
+    }
+    .bg-cover2{
+      background-position: center center;
+      background-size: cover;
+      // background-image: url(@/assets/images/banner01.png);
+      height: 500px;
+      @include max-767 {
+        height: 300px;
+      } 
+    }
+    .banner-box{
+      height: 500px;
+    }
+    .banner-text{
+      padding: 20px 60px;
+      background-color:$background-color;
+      letter-spacing: 2px;
+    }
+    .ls-1{
+      letter-spacing: 1px;
+    }
+    
+.category {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-img {
+  width: 380px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.section-dec {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($black, $alpha: 0.5);
+  }
+ 
+}
+
+  
+  .bookintro {
+    transition: all 0.2s;
+  }
+  
+  .bookintro:hover {
+    box-shadow: 2px 2px 10px rgba($dark, 0.2);
+    transform: translateY(-2%);
+  }
