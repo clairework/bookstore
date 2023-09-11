@@ -1,7 +1,7 @@
 <template>
-  <div ref="cart" class="cursor-default">
+  <div ref="cart" class="">
     <div class="card border-0 pb-0" @click="dropdownMenu">
-      <div class="cart-body overflow-auto h-100 max-h-70vh p-2">
+      <div class="h-100 max-h-70vh p-2">
         <ul class="h-100">
           <!-- 如果購物車為空 -->
           <div class="w-100 d-flex flex-column align-items-center py-5"
@@ -13,16 +13,16 @@
           </div>
           <!-- 購物車品項 -->
           <li class="d-flex justify-content-between align-items-center border-bottom-1 p-3" v-for="item in cartData.carts" :key="item.id">
-            <div class="d-flex align-items-center justify-content-between w-100">
-              <router-link class="cursor-pointer me-2" style="width:120px" :to="`/product/${item.product.id}`">
+            <div class="d-flex align-items-center justify-content-between">
+              <router-link class="cursor-pointer me-2 me-md-4" :to="`/product/${item.product.id}`">
                   <img class="" :src="item.product.imageUrl" :alt="item.product.title" style="height:110px; width:80px">
               </router-link>
-              <div class="d-flex align-items-center cart-body w-100 me-4">
-                <div class="pe-4 pt-2" style="width:300px; overflow: hidden">
-                  <p class="fw-bold fs-5 text-gray700" >{{ item.product.title }}</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="pt-2" style="width:200px">
+                  <p class="fw-bold fs-5 text-gray700 w-80" >{{ item.product.title }}</p>
                   <p class="fw-bold fs-5 text-primaryMiddle text-end">NT$ {{ item.product.price }}</p>
                 </div>
-                <div class="cart-qty col-2" >
+                <div class="ms-md-4 ms-2" >
                   <input class="form-control rounded-0 text-center fs-5"
                     type="number"
                     min="1"

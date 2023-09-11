@@ -19,7 +19,7 @@
             </div>
           </div>
           <!-- cart -->
-          <div class="dropdown-menu dropdown-menu-end vw-87.5 vw-md-27.5 rounded-4">
+          <div class="dropdown-menu dropdown-menu-end vw-90 vw-sm-70 vw-md-60 vw-lg-50 vw-xl-40 vw-xxl-30 rounded-4">
             <CartList @get-cart-list="getCartList"></CartList>
           </div>
         </div>
