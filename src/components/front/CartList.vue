@@ -6,7 +6,7 @@
           <!-- 如果購物車為空 -->
           <div class="w-100 d-flex flex-column align-items-center py-5"
             v-if="cartData.carts.length === 0">
-            <p class="fw-bold fs-3 text-gray300 mb-4">購物車內還沒有商品</p>
+            <p class="fw-bold fs-4 text-gray300 mb-4">購物車內還沒有商品</p>
           </div>
           <!-- 購物車品項 -->
           <li class="d-flex justify-content-between align-items-center border-bottom-1 p-3" v-for="item in cartData.carts" :key="item.id">
