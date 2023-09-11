@@ -6,10 +6,7 @@
           <!-- 如果購物車為空 -->
           <div class="w-100 d-flex flex-column align-items-center py-5"
             v-if="cartData.carts.length === 0">
-            <i class="fa-solid fa-triangle-exclamation text-primaryDark fa-2x mb-3"></i>
-              <p class="fw-bold mb-4">購物車內還沒有商品呢 ~</p>
-              <router-link class="btn btn-primaryDark" to="/search">查找書籍
-                <i class="fa-solid fa-book-open-reader ms-2"></i></router-link>
+            <p class="fw-bold fs-3 text-gray300 mb-4">購物車內還沒有商品</p>
           </div>
           <!-- 購物車品項 -->
           <li class="d-flex justify-content-between align-items-center border-bottom-1 p-3" v-for="item in cartData.carts" :key="item.id">
